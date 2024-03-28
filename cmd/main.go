@@ -8,6 +8,7 @@ import (
 
 func InitContainer() {
 	initContainer := container.NewContainer()
+
 	userService := initContainer.UserService()
 
 	router := routes.UserRoutes(userService)
